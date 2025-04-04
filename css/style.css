@@ -34,6 +34,7 @@ li, a {
     position: sticky;
     top: 0;
     z-index: 100;
+    height: 70px;
 }
 
 .nav-container {
@@ -128,6 +129,7 @@ li, a {
     background-image: url('/images/dave.jpg');
     background-size: cover;
     background-position: center;
+    border-radius: 20px;
     /* z-index: 1000; */
 }
 
@@ -170,7 +172,7 @@ li, a {
 
 
 /* Skills Section Styles */
-.skills{
+.skills, .about{
     padding: 0px 50px;
     margin-top: 50px;
 }
@@ -181,6 +183,8 @@ li, a {
     gap: 20px;
     margin-top: 20px;
 }
+
+/* About Section Styles */
 
 
 /* Contact Section Styles */
@@ -233,6 +237,7 @@ li, a {
 /* Mobile Screen */
 /* Navigation Styles */
 @media (max-width: 768px) {
+    /* Navigation Styles */
     .nav-toggle {
         display: flex;
     }
@@ -251,9 +256,76 @@ li, a {
     
     .nav-links.active {
         left: 0;
+        /* top: -10px; */
     }
     
     .nav-list-item {
         margin: 1rem 0;
     }
+
+    /* Intro Section Styles */
+
+    /* Parent divs */
+    .intro, .projects, .skills, .about, .contact{
+        padding: 20px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .intro-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .intro-profile-image{
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+    }
+    .intro-text-container{
+        padding-right: 0;
+        text-align: center;
+    }
+    .intro-text-container h1{
+        font-size: 2rem;
+    }
+    .intro-text-container p{
+        font-size: 1rem;
+    }
+
+    /* Contact Section Details */
+  
+    .contact-info-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-info-container h3{
+        margin-bottom: 10px;
+    }
+    .contact-info-container p{
+        margin-bottom: 5px;
+    }
+    .contact-info-container a{
+        margin-bottom: 5px;
+    }
+    .contact-form{
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact-form input, .contact-form textarea, .contact-form button{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .contact-socials{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .contact-socials a{
+        margin: 0 10px;
+    }
+  
 }
