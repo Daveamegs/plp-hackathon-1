@@ -13,7 +13,7 @@
       <div class="nav-container">
         <!-- Brand Logo -->
         <div class="brand-wrapper">
-          <a href="#"><img src="" alt="" /></a>
+          <a href="#"><span id="brand-name">TheBigMan</span></a>
         </div>
 
         <!-- Nav Toggle -->
@@ -44,13 +44,18 @@
       <section class="intro">
         <div class="intro-container">
           <div class="intro-text-container">
-            <h1 class="intro-title">Hi, I am David Amegayibor</h1>
+            <h1 class="intro-title">
+              Hi, I am <span id="my-name">David&nbsp;K.&nbsp;Amegayibor</span>
+            </h1>
             <p class="intro-description">
               I am a software engineer with a passion for building web
               applications. I love to learn new technologies and improve my
               skills.
             </p>
-            <a href="#about" class="btn-about">Learn More</a>
+            <div class="btn-holder">
+              <a href="#" class="btn-hire-me">Hire Me</a>
+              <a href="#about" class="btn-about-me">Learn More</a>
+            </div>
           </div>
 
           <div class="intro-profile-image">
@@ -74,21 +79,49 @@
 
           <div class="projects-grid">
             <div class="project-card">
-              <a
-                href="https://github.com/Daveamegs/intro-to-python-assignment"
-                target="_blank"
-              >
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+              <a href="https://dave-weather.netlify.app/" target="_blank">
+                <img
+                  src="https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="weather"
+                  width=""
+                  height=""
+                />
+                <h3>Weather App</h3>
+                <p>
+                  A Simple weather app that gives the accurate weather report of
+                  a town or city upon search.
+                </p>
               </a>
             </div>
             <div class="project-card">
-              <h3>Project 2</h3>
-              <p>Description of project 2.</p>
+              <a href="https://dave-weather.netlify.app/" target="_blank">
+                <img
+                  src="https://images.unsplash.com/photo-1562155618-e1a8bc2eb04f?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="weather"
+                  width=""
+                  height=""
+                />
+                <h3>Weather App</h3>
+                <p>
+                  A Simple weather app that gives the accurate weather report of
+                  a town or city upon search.
+                </p>
+              </a>
             </div>
             <div class="project-card">
-              <h3>Project 3</h3>
-              <p>Description of project 3.</p>
+              <a href="https://dave-weather.netlify.app/" target="_blank">
+                <img
+                  src="https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="weather"
+                  width=""
+                  height=""
+                />
+                <h3>Weather App</h3>
+                <p>
+                  A Simple weather app that gives the accurate weather report of
+                  a town or city upon search.
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -104,52 +137,166 @@
 
           <div class="skills-grid">
             <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/144/html-5--v1.png"
+                alt="html-5--v1"
+              />
               <h3>HTML</h3>
-              <p>Description of HTML skills.</p>
             </div>
             <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/css3.png"
+                alt="css3"
+              />
               <h3>CSS</h3>
-              <p>Description of CSS skills.</p>
             </div>
             <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/javascript--v1.png"
+                alt="javascript--v1"
+              />
               <h3>JavaScript</h3>
-              <p>Description of JavaScript skills.</p>
             </div>
             <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+                alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"
+              />
               <h3>React</h3>
-              <p>Description of React skills.</p>
             </div>
             <div class="skills-card">
-              <h3>Node.js</h3>
-              <p>Description of Node.js skills.</p>
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/nodejs.png"
+                alt="nodejs"
+              />
+              <!-- <h3>Node.js</h3> -->
             </div>
             <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/express-js.png"
+                alt="express-js"
+              />
+              <h3>Express JS</h3>
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo.png"
+                alt="external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo"
+              />
+              <h3>VueJs</h3>
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/python--v1.png"
+                alt="python--v1"
+              />
               <h3>Python</h3>
-              <p>Description of Python skills.</p>
             </div>
             <div class="skills-card">
-              <h3>Java</h3>
-              <p>Description of Java skills.</p>
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/flask.png"
+                alt="flask"
+              />
+              <!-- <h3>Flask</h3> -->
             </div>
             <div class="skills-card">
-              <h3>SQL</h3>
-              <p>Description of SQL skills.</p>
-            </div>
-            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/git.png"
+                alt="git"
+              />
               <h3>Git</h3>
-              <p>Description of Git skills.</p>
             </div>
             <div class="skills-card">
-              <h3>GitHub</h3>
-              <p>Description of GitHub skills.</p>
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/linux--v1.png"
+                alt="linux--v1"
+              />
+              <h3>Linux</h3>
             </div>
             <div class="skills-card">
-              <h3>Figma</h3>
-              <p>Description of Figma skills.</p>
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/terraform.png"
+                alt="terraform"
+              />
+              <h3>Terraform</h3>
             </div>
             <div class="skills-card">
-              <h3>Photoshop</h3>
-              <p>Description of Photoshop skills.</p>
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/ansible.png"
+                alt="ansible"
+              />
+              <h3>Ansible</h3>
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/kubernetes.png"
+                alt="kubernetes"
+              />
+              <h3>Kubernetes</h3>
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/amazon-web-services.png"
+                alt="amazon-web-services"
+              />
+              <!-- <h3>AWS Certified</h3> -->
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/mysql-logo.png"
+                alt="mysql-logo"
+              />
+              <!-- <h3>MySQL</h3> -->
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-shadow-tal-revivo.png"
+                alt="external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-shadow-tal-revivo"
+              />
+              <h3>Postresql</h3>
+            </div>
+            <div class="skills-card">
+              <img
+                width="96"
+                height="96"
+                src="https://img.icons8.com/color/96/mongodb.png"
+                alt="mongodb"
+              />
+              <h3>MongoDB</h3>
             </div>
           </div>
         </div>
